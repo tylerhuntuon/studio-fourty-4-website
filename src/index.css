@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+    --color-merlot: #480307;
+    --color-taupe: #897D73;
+    --color-calacatta: #F6F2EC;
+    --color-creme: #D7CFC4;
+    --color-redvelvet: #731515;
+    --color-onyx: #111111;
+}
+
 @font-face {
     font-family: "Cherolina";
     src: url("src/assets/fonts/Cherolina.ttf") format("truetype");
@@ -85,4 +94,15 @@
 
 .font-hijrnotes{
     font-family: "Hijrnotes", cursive;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+    background: var(--color-taupe);
+}
+
+body {
+    overflow-x: hidden;
 }

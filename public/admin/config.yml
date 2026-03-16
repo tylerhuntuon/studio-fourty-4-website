@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/home.yml"
+        fields:
+          - { label: "Hero Heading", name: "heroHeading", widget: "string" }
+          - { label: "Intro Heading", name: "introHeading", widget: "string" }
+          - { label: "Intro Text", name: "introText", widget: "text" }
+
+      - label: "About"
+        name: "about"
+        file: "content/about.yml"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Body", name: "body", widget: "text" }
+
+  - name: "gallery"
+    label: "Gallery"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Alt Text", name: "alt", widget: "string", required: false }

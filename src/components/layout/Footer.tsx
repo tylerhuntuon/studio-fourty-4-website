@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 
 function Footer(){
     return (
-        <div className="w-full flex justify-between items-center px-6 py-4 bg-red-50">
+        <div className="w-full flex justify-between items-center px-6 py-4 bg-taupe relative z-20">
 
-            <h1 className="text-5xl font-cherolina">
-                StudioForty4
+            <h1 className="text-2xl md:text-5xl font-cherolina">
+                Studio Forty 4
             </h1>
 
             <p className="font-caviar text-sm border-l px-4 mx-4 mr-auto">

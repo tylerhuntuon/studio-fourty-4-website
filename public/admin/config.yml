@@ -27,19 +27,24 @@ collections:
           - { label: "Final Book Now Button", name: "finalBookNowButton", widget: "string" }
           - { label: "Hero Image Left", name: "heroImageLeft", widget: "image" }
           - { label: "Hero Image Right", name: "heroImageRight", widget: "image" }
+          - { label: "Meet The Team Image", name: "meetTheTeamImage", widget: "image" }
+          - { label: "Final Gif", name: "finalGif", widget: "image" }
 
       - label: "About"
         name: "about"
         file: "content/pages/about.yml"
         fields:
-          - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Body", name: "body", widget: "text" }
+          - { label: "Hero Heading", name: "heroHeading", widget: "string" }
+          - { label: "Hero Text", name: "heroText", widget: "text" }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
 
   - name: "gallery"
-    label: "Gallery"
-    folder: "content/pages/gallery"
+    label: "About Gallery"
+    folder: "content/gallery"
     create: true
-    slug: "{{slug}}"
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Alt Text", name: "alt", widget: "string", required: false }
+      - { label: "Order", name: "order", widget: "number", required: false, value_type: "int" }

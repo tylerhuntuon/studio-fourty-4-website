@@ -1,5 +1,4 @@
 import { Parallax } from "react-scroll-parallax";
-import image10 from "../assets/images/image10.webp";
 
 function Socials(){
     const galleryImages = Object.values(
@@ -40,7 +39,7 @@ function Socials(){
                     <div className="flex h-full min-h-0 bg-taupe items-center justify-center">
                         <div className="h-4/5 w-4/5 min-h-0 overflow-hidden">
                             <img 
-                                src={image10} 
+                                src="/uploads/image10.webp" 
                                 className="block w-full h-full object-contain" 
                             />
                         </div>  

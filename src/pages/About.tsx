@@ -1,13 +1,32 @@
 import { Parallax } from "react-scroll-parallax";
-import image10 from "../assets/images/image10.webp";
+import { parse } from "yaml";
+import aboutRaw from "../../content/pages/about.yml?raw";
+
+const galleryFiles = import.meta.glob("../../content/gallery/*.{yml,yaml}", {
+    eager: true,
+    query: "?raw",
+    import: "default",
+});
+
+type AboutContent = {
+    heroHeading: string;
+    heroText: string;
+    heroImage: string;
+};
+
+type GalleryItem = {
+    image: string;
+    alt?: string;
+    order?: number;
+};
 
 function About(){
-    const galleryImages = Object.values(
-        import.meta.glob("../assets/gallery/*.{webp,png,jpg,jpeg}", {
-            eager: true,
-            import: "default",
-        })
-    ) as string[];
+    const aboutContent = parse(aboutRaw) as AboutContent;
+
+    const galleryImages = Object.values(galleryFiles)
+        .map((file) => parse(file as string) as GalleryItem)
+        .filter((item) => item.image)
+        .sort((a, b) => (a.order ?? Number.MAX_SAFE_INTEGER) - (b.order ?? Number.MAX_SAFE_INTEGER));
 
     return (
         <div className="bg-calacatta">
@@ -19,19 +38,11 @@ function About(){
                     <div className="flex h-full bg-calacatta text-onyx border-b-2 border-taupe">
                         <div className="flex h-full w-full flex-col justify-center px-12 py-8 items-center">
                             <h1 className="text-5xl font-hijrnotes pb-10">
-                                Heading$ Again
+                                {aboutContent.heroHeading}
                             </h1>
-                            
-                            <p className="font-caviar text-sm italic leading-6 pl-1/2 text-right">
-                                Talk about your business and stuff
-                                Im writing some words to fill in this space so I can see what it looks like when it's full.
-                                Im writing some words to fill in this space so I can see what it looks like when it's full.
-                                Im writing some words to fill in this space so I can see what it looks like when it's full.
-                                Im writing some words to fill in this space so I can see what it looks like when it's full.
-                                Im writing some words to fill in this space so I can see what it looks like when it's full.
-                                Im writing some words to fill in this space so I can see what it looks like when it's full.
-                                Im writing some words to fill in this space so I can see what it looks like when it's full.
-                                Im writing some words to fill in this space so I can see what it looks like when it's full.
+                             
+                            <p className="font-caviar text-sm italic leading-6 text-right">
+                                {aboutContent.heroText}
                             </p>
                             
                         </div>
@@ -40,7 +51,7 @@ function About(){
                     <div className="flex h-full min-h-0 bg-taupe items-center justify-center">
                         <div className="h-4/5 w-4/5 min-h-0 overflow-hidden">
                             <img 
-                                src={image10} 
+                                src={aboutContent.heroImage} 
                                 className="block w-full h-full object-contain" 
                             />
                         </div>  
@@ -52,11 +63,11 @@ function About(){
             {/*second section (Gallery of Photos) */}
             <div className="flex bg-calacatta py-10 justify-center items-center px-4 translate-y-7 relative z-10">
                 <div className="grid w-full max-w-300 grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {galleryImages.map((image, index) => (
-                        <div key={image} className="aspect-square w-full overflow-hidden">
+                    {galleryImages.map((item, index) => (
+                        <div key={`${item.image}-${index}`} className="aspect-square w-full overflow-hidden">
                             <img
-                                src={image}
-                                alt={`Gallery image ${index + 1}`}
+                                src={item.image}
+                                alt={item.alt ?? `Gallery image ${index + 1}`}
                                 className="h-full w-full object-cover"
                             />
                         </div>

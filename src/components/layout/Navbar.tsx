@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-import { Link } from "react-router-dom";
-=======
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
->>>>>>> 0c08033fd2eb85cadad821dd4186f53fe0e207ea
 
 function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
@@ -25,14 +21,6 @@ function Navbar(){
                     <NavLink to="https://www.fresha.com/a/studioforty4-erina-206-the-entrance-road-fe15fhse/all-offer?menu=true&share=true&pId=1032092&utm_content=link_in_bio&utm_medium=social&utm_source=ig" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Book Now</NavLink>
                 </div>
 
-<<<<<<< HEAD
-            <div className="flex gap-6">
-                <Link to="/">Home</Link>
-                <Link to="/services">Services</Link>
-                <Link to="/gallery">Gallery</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/contact">Book Now</Link>
-=======
                 <div className="relative md:hidden">
                     <button
                         className={`text-2xl leading-none ${isAboutPage ? "text-calacatta" : "text-onyx"}`}
@@ -59,7 +47,6 @@ function Navbar(){
                         <NavLink to="https://www.fresha.com/a/studioforty4-erina-206-the-entrance-road-fe15fhse/all-offer?menu=true&share=true&pId=1032092&utm_content=link_in_bio&utm_medium=social&utm_source=ig" className={({ isActive }) => isActive ? "hidden" : "hover:underline underline-offset-4"}>Book Now</NavLink>
                     </div>
                 </div>
->>>>>>> 0c08033fd2eb85cadad821dd4186f53fe0e207ea
             </div>
         </div>
 

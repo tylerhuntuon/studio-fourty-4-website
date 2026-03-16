@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-=======
 import { Link } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
-
->>>>>>> 0c08033fd2eb85cadad821dd4186f53fe0e207ea
 function Home(){
     return (
         <div>

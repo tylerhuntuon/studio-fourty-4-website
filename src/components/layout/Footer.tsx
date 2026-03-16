@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
 import { NavLink } from "react-router-dom";
-
->>>>>>> 0c08033fd2eb85cadad821dd4186f53fe0e207ea
 function Footer(){
     return (
         <div className="w-full flex justify-between items-center px-6 py-4 bg-taupe relative z-20">
@@ -26,7 +22,3 @@ function Footer(){
 }
 
 export default Footer;
-<<<<<<< HEAD
-=======
-
->>>>>>> 0c08033fd2eb85cadad821dd4186f53fe0e207ea

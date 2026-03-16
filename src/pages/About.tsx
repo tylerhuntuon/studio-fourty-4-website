@@ -1,4 +1,5 @@
 import { Parallax } from "react-scroll-parallax";
+import image10 from "../assets/images/image10.webp";
 
 function About(){
     const galleryImages = Object.values(
@@ -39,7 +40,7 @@ function About(){
                     <div className="flex h-full min-h-0 bg-taupe items-center justify-center">
                         <div className="h-4/5 w-4/5 min-h-0 overflow-hidden">
                             <img 
-                                src="src/assets/images/image10.webp" 
+                                src={image10} 
                                 className="block w-full h-full object-contain" 
                             />
                         </div>  

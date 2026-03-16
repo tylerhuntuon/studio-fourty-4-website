@@ -11,63 +11,63 @@
 
 @font-face {
     font-family: "Cherolina";
-    src: url("src/assets/fonts/Cherolina.ttf") format("truetype");
+    src: url("./assets/fonts/Cherolina.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Faith";
-    src: url("src/assets/fonts/faith.ttf") format("truetype");
+    src: url("./assets/fonts/faith.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Amoera";
-    src: url("src/assets/fonts/amoera-Regular.ttf") format("truetype");
+    src: url("./assets/fonts/amoera-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Caviar";
-    src: url("src/assets/fonts/CaviarDreams.ttf") format("truetype");
+    src: url("./assets/fonts/CaviarDreams.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Caviar";
-    src: url("src/assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
+    src: url("./assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Caviar";
-    src: url("src/assets/fonts/CaviarDreams_Italic.ttf") format("truetype");
+    src: url("./assets/fonts/CaviarDreams_Italic.ttf") format("truetype");
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Caviar";
-    src: url("src/assets/fonts/CaviarDreams_BoldItalic.ttf") format("truetype");
+    src: url("./assets/fonts/CaviarDreams_BoldItalic.ttf") format("truetype");
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Tropical";
-    src: url("src/assets/fonts/Tropical.ttf") format("truetype");
+    src: url("./assets/fonts/Tropical.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Hijrnotes";
-    src: url("src/assets/fonts/Hijrnotes.ttf") format("truetype");
+    src: url("./assets/fonts/Hijrnotes.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }

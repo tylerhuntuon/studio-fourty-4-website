@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
+import image7 from "../assets/images/image7.webp";
+import image8 from "../assets/images/image8.webp";
+import image9 from "../assets/images/image9.webp";
+import gifHero from "../assets/images/temp.gif";
+
 function Home(){
     return (
         <div>
@@ -9,12 +14,12 @@ function Home(){
                     <div className="grid grid-cols-1 md:grid-cols-2 h-237.5 w-full -translate-y-20">
                         <div 
                             className="bg-cover bg-center" 
-                            style={{ backgroundImage: "url('src/assets/images/image8.webp')" }}
+                            style={{ backgroundImage: `url(${image8})` }}
                         />
 
                         <div 
                             className="bg-cover bg-center" 
-                            style={{ backgroundImage: "url('src/assets/images/image7.webp')" }}
+                            style={{ backgroundImage: `url(${image7})` }}
                         />
                     </div>
                     
@@ -81,7 +86,7 @@ function Home(){
             <div className="w-full bg-creme text-onyx px-16 py-16 text-sm/8">
                 <div className="grid grid-cols-3 gap-10 items-center ">
                     <div className="col-span-1">
-                        <img src="src/assets/images/image9.webp" />
+                        <img src={image9} />
                     </div>
 
                     <div className="col-span-2">
@@ -120,7 +125,7 @@ function Home(){
                 <Parallax speed={-20} className="absolute inset-0">
                     <div 
                         className="h-175 w-full bg-cover bg-center"
-                        style={{ backgroundImage: "url('src/assets/images/temp.gif')" }}
+                        style={{ backgroundImage: `url(${gifHero})` }}
                     />
                 </Parallax>
                 

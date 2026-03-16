@@ -8,6 +8,16 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      const identityHash = window.location.hash;
+      if (
+        identityHash.includes("invite_token=") ||
+        identityHash.includes("recovery_token=") ||
+        identityHash.includes("confirmation_token=")
+      ) {
+        window.location.replace(`/admin/${identityHash}`);
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

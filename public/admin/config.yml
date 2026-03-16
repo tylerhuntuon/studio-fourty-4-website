@@ -11,22 +11,33 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "content/home.yml"
+        file: "content/pages/home.yml"
         fields:
           - { label: "Hero Heading", name: "heroHeading", widget: "string" }
           - { label: "Intro Heading", name: "introHeading", widget: "string" }
-          - { label: "Intro Text", name: "introText", widget: "text" }
+          - { label: "Intro Paragraph 1", name: "introParagraph1", widget: "text" }
+          - { label: "Intro Paragraph 2", name: "introParagraph2", widget: "text" }
+          - { label: "Meet The Team Heading", name: "meetTeamHeading", widget: "string" }
+          - { label: "Meet The Team Subheading", name: "meetTeamSubHeading", widget: "string" }
+          - { label: "Meet The Team Paragraph", name: "meetTeamParagraph", widget: "text" }
+          - { label: "Final Slogan", name: "finalSlogan", widget: "text" }
+          - { label: "Book Now Button", name: "bookNowButton", widget: "string" }
+          - { label: "About Button", name: "aboutButton", widget: "string" }
+          - { label: "Socials Button", name: "socialsButton", widget: "string" }
+          - { label: "Final Book Now Button", name: "finalBookNowButton", widget: "string" }
+          - { label: "Hero Image Left", name: "heroImageLeft", widget: "image" }
+          - { label: "Hero Image Right", name: "heroImageRight", widget: "image" }
 
       - label: "About"
         name: "about"
-        file: "content/about.yml"
+        file: "content/pages/about.yml"
         fields:
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
 
   - name: "gallery"
     label: "Gallery"
-    folder: "content/gallery"
+    folder: "content/pages/gallery"
     create: true
     slug: "{{slug}}"
     fields:

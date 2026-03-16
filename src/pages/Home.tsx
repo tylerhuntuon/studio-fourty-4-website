@@ -1,11 +1,31 @@
 import { Link } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
+import { parse } from "yaml";
 import image7 from "../assets/images/image7.webp";
 import image8 from "../assets/images/image8.webp";
 import image9 from "../assets/images/image9.webp";
 import gifHero from "../assets/images/temp.gif";
+import homeRaw from "../../content/pages/home.yml?raw";
 
 function Home(){
+
+    const homeContent = parse(homeRaw) as {
+        heroHeading: string;
+        introHeading: string;
+        introParagraph1: string;
+        introParagraph2: string;
+        meetTeamHeading: string;
+        meetTeamSubHeading: string;
+        meetTeamParagraph: string;
+        finalSlogan: string;
+
+        bookNowButton: string;
+        aboutButton: string;
+        socialsButton: string;
+        finalBookNowButton: string;
+    }
+
+
     return (
         <div>
             {/*first section (side by side picture background)*/}
@@ -32,7 +52,7 @@ function Home(){
                     <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center w-full max-w-full md:max-w-300 text-calacatta">
 
                         <p className="text-4xl pt-2 font-amoera pb-10 md:pb-0">
-                            Blah Blah blah blah <strong>Words</strong> blah blah blah blah
+                            {homeContent.heroHeading}
                         </p>
 
                         <Link 
@@ -42,7 +62,7 @@ function Home(){
                             <button 
                                 className="pt-2 text-calacatta font-amoera text-4xl text-right hover:rounded-xs hover:bg-merlot transition"
                                 >
-                                Book Now
+                                {homeContent.bookNowButton}
                             </button>
                         </Link>
                         
@@ -55,29 +75,20 @@ function Home(){
             <div className="flex relative w-full bg-taupe text-calacatta justify-center items-center">
                 <div className="flex flex-col relative px-5 md:w-200 justify-center items-center gap-4 text-center text-sm/8 pt-15 pb-10">
                     <h1 className="text-5xl font-tropical pb-5">
-                        Heading Or Something
+                        {homeContent.introHeading}
                     </h1>
                     <p className="font-caviar text-base italic">
-                        Im writing some words to fill in this space so I can see what it looks like when it's full.
-                        words words and some more words, gotta fill this space with something so I can get the padding right
+                        {homeContent.introParagraph1}
                     </p>
                     <p className="font-caviar text-base italic">
-                        Im writing some words to fill in this space so I can see what it looks like when it's full.
-                        words words and some more words, gotta fill this space with something so I can get the padding right
-                        Im writing some words to fill in this space so I can see what it looks like when it's full.
-                        words words and some more words, gotta fill this space with something so I can get the padding right
-                        Im writing some words to fill in this space so I can see what it looks like when it's full.
-                        words words and some more words, gotta fill this space with something so I can get the padding right
-                        Im writing some words to fill in this space so I can see what it looks like when it's full.
-                        words words and some more words, gotta fill this space with something so I can get the padding right
-                        Im writing some words to fill in this space so I can see what it looks like when it's full.
+                        {homeContent.introParagraph2}
                     </p>
 
                     <Link
                         to="/about"
                         className="border-2 rounded-xs border-calacatta text-calacatta hover:bg-calacatta hover:text-merlot transition w-40 self-center text-center font-bold"
                     >
-                        About
+                        {homeContent.aboutButton}
                     </Link>
                 </div>
             </div>
@@ -91,28 +102,20 @@ function Home(){
 
                     <div className="col-span-2">
                         <h1 className="text-5xl font-hijrnotes pb-5">
-                            Heading$
+                            {homeContent.meetTeamHeading}
                         </h1>
                         <h2 className="text-xl font-bold pb-3 pt-2 font-tropical">
-                            Meet the team or something
+                            {homeContent.meetTeamSubHeading}
                         </h2>
                         <p className="font-caviar text-base italic">
-                            Im writing some words to fill in this space so I can see what it looks like when it's full.
-                            words words and some more words, gotta fill this space with something so I can get the padding right
-                            Im writing some words to fill in this space so I can see what it looks like when it's full.
-                            words words and some more words, gotta fill this space with something so I can get the padding right
-                            Im writing some words to fill in this space so I can see what it looks like when it's full.
-                            words words and some more words, gotta fill this space with something so I can get the padding right
-                            Im writing some words to fill in this space so I can see what it looks like when it's full.
-                            words words and some more words, gotta fill this space with something so I can get the padding right
-                            Im writing some words to fill in this space so I can see what it looks like when it's full.
+                            {homeContent.meetTeamParagraph}
                         </p>
                         <div className="pt-5">
                             <Link
                                 to="/socials"
                                 className="border-2 rounded-xs text-base border-merlot bg-merlot text-creme hover:bg-creme hover:text-merlot transition w-30 self-center text-center py-1.5 px-10 font-bold"
                             >
-                                Socials
+                                {homeContent.socialsButton}
                             </Link>
                         </div>
                         
@@ -136,13 +139,13 @@ function Home(){
                     <div className="flex flex-col justify-between items-center w-full max-w-300 text-white">
 
                         <p className="text-6xl font-cherolina py-3">
-                            Something. Someone. Somewhere.
+                            {homeContent.finalSlogan}
                         </p>
                         <Link
                         to="https://www.fresha.com/a/studioforty4-erina-206-the-entrance-road-fe15fhse/all-offer?menu=true&share=true&pId=1032092&utm_content=link_in_bio&utm_medium=social&utm_source=ig"
                         className="border-2 border-calacatta text-calacatta hover:bg-calacatta hover:text-merlot rounded-xs transition w-40 self-center text-center font-bold"
                         >
-                            Book Now
+                            {homeContent.finalBookNowButton}
                         </Link>
 
                     </div>

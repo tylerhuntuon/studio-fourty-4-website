@@ -2,7 +2,7 @@ import { Parallax } from "react-scroll-parallax";
 import { parse } from "yaml";
 import aboutRaw from "../../content/pages/about.yml?raw";
 
-const galleryFiles = import.meta.glob("../../content/gallery/*.{yml,yaml}", {
+const galleryFiles = import.meta.glob("../../content/gallery/*.{yml,yaml,md}", {
     eager: true,
     query: "?raw",
     import: "default",
@@ -24,7 +24,14 @@ function About(){
     const aboutContent = parse(aboutRaw) as AboutContent;
 
     const galleryImages = Object.values(galleryFiles)
-        .map((file) => parse(file as string) as GalleryItem)
+        .map((file) => {
+            const raw = (file as string).trim();
+            const frontmatter = raw.startsWith("---")
+                ? raw.replace(/^---\s*[\r\n]+/, "").replace(/[\r\n]+---\s*$/, "")
+                : raw;
+
+            return parse(frontmatter) as GalleryItem;
+        })
         .filter((item) => item.image)
         .sort((a, b) => (a.order ?? Number.MAX_SAFE_INTEGER) - (b.order ?? Number.MAX_SAFE_INTEGER));
 

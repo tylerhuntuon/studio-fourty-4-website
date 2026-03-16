@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer(){
     return (
         <div className="flex justify-between items-center px-6 py-4 bg-pink-300">

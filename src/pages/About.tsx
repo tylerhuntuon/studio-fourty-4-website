@@ -1,5 +1,6 @@
 import { Parallax } from "react-scroll-parallax";
 import { parse } from "yaml";
+import ReactMarkdown from "react-markdown";
 import aboutRaw from "../../content/pages/about.yml?raw";
 
 const galleryFiles = import.meta.glob("../../content/gallery/*.{yml,yaml,md}", {
@@ -37,20 +38,24 @@ function About(){
 
     return (
         <div className="bg-calacatta">
-            <div className="bg-taupe h-25" />
+            <div className="bg-taupe h-15" />
 
             {/*first section (side by side picture background)*/}
-            <Parallax speed={-3} startScroll={100} endScroll={800} className="inset-0">
-                <div className="relative z-20 grid grid-cols-1 md:grid-cols-2 w-full md:h-[60vh] overflow-hidden translate-y-7">
+            <Parallax speed={-3} startScroll={100} endScroll={800} className="relative z-20">
+                <div className="relative grid grid-cols-1 md:grid-cols-2 w-full md:h-[60vh] translate-y-7 z-20">
                     <div className="flex h-full bg-calacatta text-onyx border-b-2 border-taupe">
                         <div className="flex h-full w-full flex-col justify-center px-12 py-8 items-center">
-                            <h1 className="text-5xl font-hijrnotes pb-10">
-                                {aboutContent.heroHeading}
-                            </h1>
-                             
-                            <p className="font-caviar text-sm italic leading-6 text-right">
-                                {aboutContent.heroText}
-                            </p>
+                            <div className="text-5xl font-heading pb-10">
+                                <ReactMarkdown>
+                                    {aboutContent.heroHeading}
+                                </ReactMarkdown>
+                            </div>
+                            <div className="font-body text-sm italic leading-6 text-right">
+                                <ReactMarkdown>
+                                    {aboutContent.heroText}
+                                </ReactMarkdown>
+                            </div>
+                            
                             
                         </div>
                     </div>
@@ -68,7 +73,7 @@ function About(){
             
 
             {/*second section (Gallery of Photos) */}
-            <div className="flex bg-calacatta py-10 justify-center items-center px-4 translate-y-7 relative z-10">
+            <div className="flex bg-calacatta py-10 justify-center items-center px-4 translate-y-7 relative z-0">
                 <div className="grid w-full max-w-300 grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {galleryImages.map((item, index) => (
                         <div key={`${item.image}-${index}`} className="aspect-square w-full overflow-hidden">

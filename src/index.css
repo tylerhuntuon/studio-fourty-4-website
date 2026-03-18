@@ -10,90 +10,58 @@
 }
 
 @font-face {
+    font-family: "Heading";
+    src: url("./assets/fonts/Moulin-Light-Trial.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Subheading";
+    src: url("./assets/fonts/RedHatDisplay-Variable.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Body";
+    src: url("./assets/fonts/Satoshi-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Feature";
+    src: url("./assets/fonts/CodeSaver-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Cherolina";
-    src: url("./assets/fonts/Cherolina.ttf") format("truetype");
+    src: url("./assets/fonts/Cherolina.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Faith";
-    src: url("./assets/fonts/faith.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+.font-heading{
+    font-family: "Heading", serif;
 }
 
-@font-face {
-    font-family: "Amoera";
-    src: url("./assets/fonts/amoera-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+.font-subheading{
+    font-family: "Subheading", serif;
 }
 
-@font-face {
-    font-family: "Caviar";
-    src: url("./assets/fonts/CaviarDreams.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+.font-body{
+    font-family: "Body", serif;
 }
 
-@font-face {
-    font-family: "Caviar";
-    src: url("./assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Caviar";
-    src: url("./assets/fonts/CaviarDreams_Italic.ttf") format("truetype");
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Caviar";
-    src: url("./assets/fonts/CaviarDreams_BoldItalic.ttf") format("truetype");
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Tropical";
-    src: url("./assets/fonts/Tropical.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Hijrnotes";
-    src: url("./assets/fonts/Hijrnotes.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+.font-feature{
+    font-family: "Feature", serif;
 }
 
 .font-cherolina{
     font-family: "Cherolina", cursive;
-}
-
-.font-faith{
-    font-family: "Faith", cursive;
-}
-
-.font-amoera{
-    font-family: "Amoera", serif;
-}
-
-.font-caviar{
-    font-family: "Caviar", serif;
-}
-
-.font-tropical{
-    font-family: "Tropical", serif;
-}
-
-.font-hijrnotes{
-    font-family: "Hijrnotes", cursive;
 }
 
 html,

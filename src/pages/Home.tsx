@@ -1,29 +1,36 @@
 import { Link } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
 import { parse } from "yaml";
+import ReactMarkdown from "react-markdown";
 import homeRaw from "../../content/pages/home.yml?raw";
 
 function Home(){
 
     const homeContent = parse(homeRaw) as {
-        heroHeading: string;
-        introHeading: string;
-        introParagraph1: string;
-        introParagraph2: string;
-        meetTeamHeading: string;
-        meetTeamSubHeading: string;
-        meetTeamParagraph: string;
-        finalSlogan: string;
-
-        bookNowButton: string;
-        aboutButton: string;
-        socialsButton: string;
-        finalBookNowButton: string;
-
-        heroImageLeft: string;
-        heroImageRight: string;
-        meetTheTeamImage: string;
-        finalGif: string;
+        heroSection: {
+            heroHeading: string;
+            bookNowButton: string;
+            heroImageLeft: string;
+            heroImageRight: string;
+        };
+        introSection: {
+            introHeading: string;
+            introParagraph1: string;
+            introParagraph2: string;
+            aboutButton: string;
+        };
+        meetTeamSection: {
+            meetTeamHeading: string;
+            meetTeamSubHeading: string;
+            meetTeamParagraph: string;
+            socialsButton: string;
+            meetTheTeamImage: string;
+        };
+        sloganSection: {
+            finalSlogan: string;
+            finalBookNowButton: string;
+            finalGif: string;
+        };
     }
 
 
@@ -35,12 +42,12 @@ function Home(){
                     <div className="grid grid-cols-1 md:grid-cols-2 h-237.5 w-full -translate-y-20">
                         <div 
                             className="bg-cover bg-center" 
-                            style={{ backgroundImage: `url(${homeContent.heroImageLeft})` }}
+                            style={{ backgroundImage: `url(${homeContent.heroSection.heroImageLeft})` }}
                         />
 
                         <div 
                             className="bg-cover bg-center" 
-                            style={{ backgroundImage: `url(${homeContent.heroImageRight})` }}
+                            style={{ backgroundImage: `url(${homeContent.heroSection.heroImageRight})` }}
                         />
                     </div>
                     
@@ -51,19 +58,23 @@ function Home(){
 
                 <div className="absolute inset-0 flex items-end justify-center md:py-20 md:px-30">
                     <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center w-full max-w-full md:max-w-300 text-calacatta">
-
-                        <p className="text-4xl pt-2 font-amoera pb-10 md:pb-0">
-                            {homeContent.heroHeading}
-                        </p>
+                        <div  className="text-4xl pt-2 font-heading pb-10 md:pb-0">
+                            <ReactMarkdown>
+                                {homeContent.heroSection.heroHeading}
+                            </ReactMarkdown>
+                        </div>
+                        
 
                         <Link 
                             to="https://www.fresha.com/a/studioforty4-erina-206-the-entrance-road-fe15fhse/all-offer?menu=true&share=true&pId=1032092&utm_content=link_in_bio&utm_medium=social&utm_source=ig"
                             className="text-right"    
                         >
                             <button 
-                                className="pt-2 text-calacatta font-amoera text-4xl text-right hover:rounded-xs hover:bg-merlot transition"
-                                >
-                                {homeContent.bookNowButton}
+                                className="pt-2 text-calacatta font-heading text-4xl text-right hover:rounded-xs hover:bg-merlot transition"
+                            >
+                                <ReactMarkdown>
+                                    {homeContent.heroSection.bookNowButton}
+                                </ReactMarkdown>
                             </button>
                         </Link>
                         
@@ -75,48 +86,59 @@ function Home(){
             {/*second section (Words and about button)*/}
             <div className="flex relative w-full bg-taupe text-calacatta justify-center items-center">
                 <div className="flex flex-col relative px-5 md:w-200 justify-center items-center gap-4 text-center text-sm/8 pt-15 pb-10">
-                    <h1 className="text-5xl font-tropical pb-5">
-                        {homeContent.introHeading}
-                    </h1>
-                    <p className="font-caviar text-base italic">
-                        {homeContent.introParagraph1}
-                    </p>
-                    <p className="font-caviar text-base italic">
-                        {homeContent.introParagraph2}
-                    </p>
+                    <div className="text-5xl font-heading pb-5">
+                        <ReactMarkdown>
+                            {homeContent.introSection.introHeading}
+                        </ReactMarkdown>
+                    </div>
+                    
+                    <div className="font-caviar text-body italic">
+                        <ReactMarkdown>
+                            {homeContent.introSection.introParagraph1}
+                        </ReactMarkdown>
+                    </div>
+                    
 
                     <Link
                         to="/about"
-                        className="border-2 rounded-xs border-calacatta text-calacatta hover:bg-calacatta hover:text-merlot transition w-40 self-center text-center font-bold"
+                        className="border-2 font-feature rounded-xs border-calacatta text-calacatta hover:bg-calacatta hover:text-merlot transition w-40 self-center text-center font-bold"
                     >
-                        {homeContent.aboutButton}
+                        <ReactMarkdown>
+                            {homeContent.introSection.aboutButton}
+                        </ReactMarkdown>
                     </Link>
                 </div>
             </div>
 
             {/*third section (picture and meet the team)*/}
-            <div className="w-full bg-creme text-onyx px-16 py-16 text-sm/8">
-                <div className="grid grid-cols-3 gap-10 items-center ">
-                    <div className="col-span-1">
-                        <img src={homeContent.meetTheTeamImage} />
+            <div className="w-full bg-creme text-onyx md:px-16 px-5 py-16 text-sm/8">
+                <div className="grid md:grid-cols-3 gap-10 items-center justify-center">
+                    <div className="">
+                        <img src={homeContent.meetTeamSection.meetTheTeamImage} />
                     </div>
 
-                    <div className="col-span-2">
-                        <h1 className="text-5xl font-hijrnotes pb-5">
-                            {homeContent.meetTeamHeading}
-                        </h1>
-                        <h2 className="text-xl font-bold pb-3 pt-2 font-tropical">
-                            {homeContent.meetTeamSubHeading}
-                        </h2>
-                        <p className="font-caviar text-base italic">
-                            {homeContent.meetTeamParagraph}
-                        </p>
-                        <div className="pt-5">
-                            <Link
-                                to="/socials"
-                                className="border-2 rounded-xs text-base border-merlot bg-merlot text-creme hover:bg-creme hover:text-merlot transition w-30 self-center text-center py-1.5 px-10 font-bold"
-                            >
-                                {homeContent.socialsButton}
+                    <div className="md:col-span-2">
+                        <div className="text-5xl font-heading">
+                            <ReactMarkdown>
+                                {homeContent.meetTeamSection.meetTeamHeading}
+                            </ReactMarkdown>
+                        </div>
+                        <div className="text-xl font-bold pb-10 pt-2 font-subheading">
+                            <ReactMarkdown>
+                                {homeContent.meetTeamSection.meetTeamSubHeading}
+                            </ReactMarkdown>
+                        </div>
+                        <div className="font-caviar text-body italic">
+                            <ReactMarkdown>
+                                {homeContent.meetTeamSection.meetTeamParagraph}
+                            </ReactMarkdown>
+                        </div>
+                        
+                        <div className="border-2 rounded-xs font-feature text-base border-merlot bg-merlot text-creme hover:bg-creme hover:text-merlot transition w-30 self-center text-center py-1.5 mt-5 font-bold">
+                            <Link to="/socials">
+                                <ReactMarkdown>
+                                    {homeContent.meetTeamSection.socialsButton}
+                                </ReactMarkdown>
                             </Link>
                         </div>
                         
@@ -129,7 +151,7 @@ function Home(){
                 <Parallax speed={-20} className="absolute inset-0">
                     <div 
                         className="h-175 w-full bg-cover bg-center"
-                        style={{ backgroundImage: `url(${homeContent.finalGif})` }}
+                        style={{ backgroundImage: `url(${homeContent.sloganSection.finalGif})` }}
                     />
                 </Parallax>
                 
@@ -138,15 +160,18 @@ function Home(){
 
                 <div className="absolute inset-0 flex items-end justify-center py-10 px-3">
                     <div className="flex flex-col justify-between items-center w-full max-w-300 text-white">
-
-                        <p className="text-6xl font-cherolina py-3">
-                            {homeContent.finalSlogan}
-                        </p>
+                        <div className="md:text-6xl text-4xl font-cherolina py-3">
+                            <ReactMarkdown>
+                                {homeContent.sloganSection.finalSlogan}
+                            </ReactMarkdown>
+                        </div>
                         <Link
                         to="https://www.fresha.com/a/studioforty4-erina-206-the-entrance-road-fe15fhse/all-offer?menu=true&share=true&pId=1032092&utm_content=link_in_bio&utm_medium=social&utm_source=ig"
-                        className="border-2 border-calacatta text-calacatta hover:bg-calacatta hover:text-merlot rounded-xs transition w-40 self-center text-center font-bold"
+                        className="border-2 font-feature border-calacatta text-calacatta hover:bg-calacatta hover:text-merlot rounded-xs transition w-40 self-center text-center font-bold"
                         >
-                            {homeContent.finalBookNowButton}
+                            <ReactMarkdown>
+                                {homeContent.sloganSection.finalBookNowButton}
+                            </ReactMarkdown>
                         </Link>
 
                     </div>

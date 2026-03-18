@@ -5,15 +5,17 @@ function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
     const isAboutPage = location.pathname === "/about";
+    const closeMenu = () => setMenuOpen(false);
 
     return (
-        <div className={`absolute top-0 left-0 z-10 w-full px-6 py-4 ${isAboutPage ? "text-calacatta" : "text-onyx"}`}>
+        <div className={`absolute top-0 left-0 z-50 w-full px-6 py-4 ${isAboutPage ? "text-calacatta" : "text-onyx"}`}>
             <div className="flex items-center justify-between">
-                <h1 className="text-7xl font-cherolina">
-                    StudioForty4
-                </h1>
+                <NavLink to="/" onClick={closeMenu}>
+                    <img src={isAboutPage ? "src/assets/logo/PRIMARY LOGO - CALACATTA.svg" : "src/assets/logo/PRIMARY LOGO - ONYX.svg"} className="w-60" />
+                </NavLink>
+                
 
-                <div className="hidden md:flex gap-6 font-amoera font-bold">
+                <div className="hidden md:flex gap-6 font-subheading">
                     <NavLink to="/" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Home</NavLink>
                     <NavLink to="/about" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>About</NavLink>
                     <NavLink to="/services" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Services</NavLink>
@@ -32,19 +34,19 @@ function Navbar(){
                     </button>
 
                     <div 
-                        className={`absolute right-0 top-full mt-3 flex w-fit min-w-32 flex-col items-end gap-4 text-right font-amoera font-bold transition-all duration-300 ${
+                        className={`absolute right-0 top-full mt-3 flex w-fit min-w-32 flex-col items-end gap-4 text-right font-subheading transition-all duration-300 ${
                             isAboutPage ? "text-onyx" : "text-onyx"
                         } ${
                             menuOpen
                                 ? "translate-y-0 scale-100 opacity-100"
                                 : "-translate-y-2 scale-95 opacity-0 pointer-events-none"
-                        }`}
+                        } z-50`}
                     >
-                        <NavLink to="/" className={({ isActive }) => isActive ? "hidden" : "hover:underline underline-offset-4"}>Home</NavLink>
-                        <NavLink to="/about" className={({ isActive }) => isActive ? "hidden" : "hover:underline underline-offset-4"}>About</NavLink>
-                        <NavLink to="/services" className={({ isActive }) => isActive ? "hidden" : "hover:underline underline-offset-4"}>Services</NavLink>
-                        <NavLink to="/socials" className={({ isActive }) => isActive ? "hidden" : "hover:underline underline-offset-4"}>Socials</NavLink>
-                        <NavLink to="https://www.fresha.com/a/studioforty4-erina-206-the-entrance-road-fe15fhse/all-offer?menu=true&share=true&pId=1032092&utm_content=link_in_bio&utm_medium=social&utm_source=ig" className={({ isActive }) => isActive ? "hidden" : "hover:underline underline-offset-4"}>Book Now</NavLink>
+                        <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Home</NavLink>
+                        <NavLink to="/about" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>About</NavLink>
+                        <NavLink to="/services" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Services</NavLink>
+                        <NavLink to="/socials" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Socials</NavLink>
+                        <NavLink to="https://www.fresha.com/a/studioforty4-erina-206-the-entrance-road-fe15fhse/all-offer?menu=true&share=true&pId=1032092&utm_content=link_in_bio&utm_medium=social&utm_source=ig" onClick={closeMenu} className={({ isActive }) => isActive ? "hidden" : "hover:underline underline-offset-4"}>Book Now</NavLink>
                     </div>
                 </div>
             </div>

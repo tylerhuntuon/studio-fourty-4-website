@@ -1,40 +1,51 @@
-heroHeading: oaisdoiansf fuck off
-introHeading: Heading Or Something
-introParagraph1: Im writing some words to fill in this space so I can see what
-  it looks like when it's full. words words and some more words, gotta fill this
-  space with something so I can get the padding right
-introParagraph2: Im writing some words to fill in this space so I can see what
-  it looks like when it's full. words words and some more words, gotta fill this
-  space with something so I can get the padding right Im writing some words to
-  fill in this space so I can see what it looks like when it's full. words words
-  and some more words, gotta fill this space with something so I can get the
-  padding right Im writing some words to fill in this space so I can see what it
-  looks like when it's full. words words and some more words, gotta fill this
-  space with something so I can get the padding right Im writing some words to
-  fill in this space so I can see what it looks like when it's full. words words
-  and some more words, gotta fill this space with something so I can get the
-  padding right Im writing some words to fill in this space so I can see what it
-  looks like when it's full.
-meetTeamHeading: Heading$
-meetTeamSubHeading: Meet the team or something
-meetTeamParagraph: Im writing some words to fill in this space so I can see what
-  it looks like when it's full. words words and some more words, gotta fill this
-  space with something so I can get the padding right Im writing some words to
-  fill in this space so I can see what it looks like when it's full. words words
-  and some more words, gotta fill this space with something so I can get the
-  padding right Im writing some words to fill in this space so I can see what it
-  looks like when it's full. words words and some more words, gotta fill this
-  space with something so I can get the padding right Im writing some words to
-  fill in this space so I can see what it looks like when it's full. words words
-  and some more words, gotta fill this space with something so I can get the
-  padding right Im writing some words to fill in this space so I can see what it
-  looks like when it's full.
-finalSlogan: Something. Someone. Somewhere.
-bookNowButton: Book Now
-aboutButton: About
-socialsButton: Socials
-finalBookNowButton: Book Now
-heroImageLeft: /uploads/image8.webp
-heroImageRight: /uploads/image7.webp
-meetTheTeamImage: /uploads/temp-img6.webp
-finalGif: /uploads/temp.gif
+heroSection:
+  heroHeading: Words words words words **words**
+  bookNowButton: Book Now
+  heroImageLeft: /uploads/homeHeroLeft.jpg
+  heroImageRight: /uploads/homeHeroRight.jpg
+introSection:
+  introHeading: Heading Or Something
+  introParagraph1: >-
+    Im writing some words to fill in this space so I can see what it looks like
+    when it's full. words words and some more words, gotta fill this space with
+    something so I can get the padding right blah blah blah 
+
+    Im writing some words to fill in this space so I can see what it looks like when it's full. words words and some more words, gotta fill this space with something so I can get the padding right blah blah blah
+
+
+
+    Im writing some words to fill in this space so I can see what it looks like when it's full. words words and some more words, gotta fill this space with something so I can get the padding right blah blah blah
+  introParagraph2: Im writing some words to fill in this space so I can see what
+    it looks like when it's full. words words and some more words, gotta fill
+    this space with something so I can get the padding right Im writing some
+    words to fill in this space so I can see what it looks like when it's full.
+    words words and some more words, gotta fill this space with something so I
+    can get the padding right Im writing some words to fill in this space so I
+    can see what it looks like when it's full. words words and some more words,
+    gotta fill this space with something so I can get the padding right Im
+    writing some words to fill in this space so I can see what it looks like
+    when it's full. words words and some more words, gotta fill this space with
+    something so I can get the padding right Im writing some words to fill in
+    this space so I can see what it looks like when it's full.
+  aboutButton: About
+meetTeamSection:
+  meetTeamHeading: Heading
+  meetTeamSubHeading: Meet the team or something
+  meetTeamParagraph: Im writing some words to fill in this space so I can see what
+    it looks like when it's full. words words and some more words, gotta fill
+    this space with something so I can get the padding right Im writing some
+    words to fill in this space so I can see what it looks like when it's full.
+    words words and some more words, gotta fill this space with something so I
+    can get the padding right Im writing some words to fill in this space so I
+    can see what it looks like when it's full. words words and some more words,
+    gotta fill this space with something so I can get the padding right Im
+    writing some words to fill in this space so I can see what it looks like
+    when it's full. words words and some more words, gotta fill this space with
+    something so I can get the padding right Im writing some words to fill in
+    this space so I can see what it looks like when it's full.
+  socialsButton: Socials
+  meetTheTeamImage: /uploads/homeMeetTeam.jpg
+sloganSection:
+  finalSlogan: Something. Someone. Somewhere.
+  finalBookNowButton: Book Now
+  finalGif: /uploads/bottomBannnerGif.gif

@@ -8,6 +8,10 @@ local_backend: true
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
+logo:
+  src: "src/assets/logo/MONOGRAM - ONYX.svg"
+  show_in_header: true
+
 collections:
   - name: "pages"
     label: "Pages"
@@ -16,29 +20,49 @@ collections:
         name: "home"
         file: "content/pages/home.yml"
         fields:
-          - { label: "Hero Heading", name: "heroHeading", widget: "string" }
-          - { label: "Intro Heading", name: "introHeading", widget: "string" }
-          - { label: "Intro Paragraph 1", name: "introParagraph1", widget: "text" }
-          - { label: "Intro Paragraph 2", name: "introParagraph2", widget: "text" }
-          - { label: "Meet The Team Heading", name: "meetTeamHeading", widget: "string" }
-          - { label: "Meet The Team Subheading", name: "meetTeamSubHeading", widget: "string" }
-          - { label: "Meet The Team Paragraph", name: "meetTeamParagraph", widget: "text" }
-          - { label: "Final Slogan", name: "finalSlogan", widget: "text" }
-          - { label: "Book Now Button", name: "bookNowButton", widget: "string" }
-          - { label: "About Button", name: "aboutButton", widget: "string" }
-          - { label: "Socials Button", name: "socialsButton", widget: "string" }
-          - { label: "Final Book Now Button", name: "finalBookNowButton", widget: "string" }
-          - { label: "Hero Image Left", name: "heroImageLeft", widget: "image" }
-          - { label: "Hero Image Right", name: "heroImageRight", widget: "image" }
-          - { label: "Meet The Team Image", name: "meetTheTeamImage", widget: "image" }
-          - { label: "Final Gif", name: "finalGif", widget: "image" }
+          - label: "Hero Section"
+            name: "heroSection"
+            widget: "object"
+            fields:
+              - { label: "Hero Heading", name: "heroHeading", widget: "markdown" }
+              - { label: "Book Now Button", name: "bookNowButton", widget: "markdown" }
+              - { label: "Hero Image Left", name: "heroImageLeft", widget: "image" }
+              - { label: "Hero Image Right", name: "heroImageRight", widget: "image" }
 
+          - label: "Intro Section"
+            name: "introSection"
+            widget: "object"
+            fields:
+              - { label: "Intro Heading", name: "introHeading", widget: "markdown" }
+              - { label: "Intro Paragraph 1", name: "introParagraph1", widget: "markdown" }
+              - { label: "Intro Paragraph 2", name: "introParagraph2", widget: "markdown" }
+              - { label: "About Button", name: "aboutButton", widget: "markdown" }
+
+          - label: "Meet The Team Section"
+            name: "meetTeamSection"
+            widget: "object"
+            fields:
+              - { label: "Meet The Team Heading", name: "meetTeamHeading", widget: "markdown" }
+              - { label: "Meet The Team Subheading", name: "meetTeamSubHeading", widget: "markdown" }
+              - { label: "Meet The Team Paragraph", name: "meetTeamParagraph", widget: "markdown" }
+              - { label: "Socials Button", name: "socialsButton", widget: "markdown" }
+              - { label: "Meet The Team Image", name: "meetTheTeamImage", widget: "image" }
+              
+
+          - label: "Final Slogan Section"
+            name: "sloganSection"
+            widget: "object"
+            fields:
+              - { label: "Final Slogan", name: "finalSlogan", widget: "markdown" }
+              - { label: "Final Book Now Button", name: "finalBookNowButton", widget: "markdown" }
+              - { label: "Final Gif", name: "finalGif", widget: "image" }
+          
       - label: "About"
         name: "about"
         file: "content/pages/about.yml"
         fields:
-          - { label: "Hero Heading", name: "heroHeading", widget: "string" }
-          - { label: "Hero Text", name: "heroText", widget: "text" }
+          - { label: "Hero Heading", name: "heroHeading", widget: "markdown" }
+          - { label: "Hero Text", name: "heroText", widget: "markdown" }
           - { label: "Hero Image", name: "heroImage", widget: "image" }
 
   - name: "gallery"

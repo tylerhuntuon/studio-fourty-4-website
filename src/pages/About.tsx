@@ -38,7 +38,7 @@ function About(){
 
     return (
         <div className="bg-calacatta">
-            <div className="bg-taupe h-15" />
+            <div className="bg-taupe h-14" />
 
             {/*first section (side by side picture background)*/}
             <Parallax speed={-3} startScroll={100} endScroll={800} className="relative z-20">

@@ -4,14 +4,16 @@ import { useState } from "react";
 function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
-    const isAboutPage = location.pathname === "/about";
+    const isDarkPage = location.pathname !== "/";
+    const useDarkMenuText = location.pathname === "/about";
+    const isSocialsPage = location.pathname === "/socials";
     const closeMenu = () => setMenuOpen(false);
 
     return (
-        <div className={`absolute top-0 left-0 z-50 w-full px-6 py-4 ${isAboutPage ? "text-calacatta" : "text-onyx"}`}>
+        <div className={`absolute top-0 left-0 z-50 w-full px-6 py-4 ${isDarkPage ? "text-calacatta" : "text-onyx"}`}>
             <div className="flex items-center justify-between">
                 <NavLink to="/" onClick={closeMenu}>
-                    <img src={isAboutPage ? "src/assets/logo/PRIMARY LOGO - CALACATTA.svg" : "src/assets/logo/PRIMARY LOGO - ONYX.svg"} className="w-60" />
+                    <img src={isDarkPage ? "src/assets/logo/PRIMARY LOGO - CALACATTA.svg" : "src/assets/logo/PRIMARY LOGO - ONYX.svg"} className="w-60" />
                 </NavLink>
                 
 
@@ -25,7 +27,7 @@ function Navbar(){
 
                 <div className="relative md:hidden">
                     <button
-                        className={`text-2xl leading-none ${isAboutPage ? "text-calacatta" : "text-onyx"}`}
+                        className={`text-2xl leading-none ${isDarkPage ? "text-calacatta" : "text-onyx"}`}
                         onClick={() => setMenuOpen(!menuOpen)}
                         aria-expanded={menuOpen}
                         aria-label="Toggle navigation menu"
@@ -34,12 +36,16 @@ function Navbar(){
                     </button>
 
                     <div 
-                        className={`absolute right-0 top-full mt-3 flex w-fit min-w-32 flex-col items-end gap-4 text-right font-subheading transition-all duration-300 ${
-                            isAboutPage ? "text-onyx" : "text-onyx"
+                        className={`absolute right-0 top-full mt-3 flex w-29 px-5 flex-col items-center gap-3 text-center font-subheading transition-all duration-300 rounded-bl-lg translate-x-6 py-2 ${
+                            useDarkMenuText ? "text-calacatta bg-linear-to-b from-taupe to-taupe/75" : "text-calacatt"
                         } ${
                             menuOpen
                                 ? "translate-y-0 scale-100 opacity-100"
                                 : "-translate-y-2 scale-95 opacity-0 pointer-events-none"
+                        } ${
+                            isDarkPage ? "text-calacatta" : "text-onyx bg-onyx/0"
+                        } ${
+                            isSocialsPage ? "bg-linear-to-b from-onyx via-onyx to-onyx/80" : ""
                         } z-50`}
                     >
                         <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Home</NavLink>

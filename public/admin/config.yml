@@ -65,6 +65,28 @@ collections:
           - { label: "Hero Text", name: "heroText", widget: "markdown" }
           - { label: "Hero Image", name: "heroImage", widget: "image" }
 
+      - label: "Socials"
+        name: "socials"
+        file: "content/pages/socials.yml"
+        fields:
+          - label: "Faith Section"
+            name: "faithSection"
+            widget: "object"
+            fields:
+              - { label: "Faith Heading", name: "faithHeading", widget: "markdown" }
+              - { label: "Faith @", name: "faithAt", widget: "text" }
+              - { label: "Faith Body", name: "faithBody", widget: "markdown" }
+              - { label: "Faith Image", name: "faithImage", widget: "image" }
+
+          - label: "Erin Section"
+            name: "erinSection"
+            widget: "object"
+            fields:
+              - { label: "Erin Heading", name: "erinHeading", widget: "markdown" }
+              - { label: "Erin @", name: "erinAt", widget: "text" }
+              - { label: "Erin Body", name: "erinBody", widget: "markdown" }
+              - { label: "Erin Image", name: "erinImage", widget: "image" }
+
   - name: "gallery"
     label: "About Gallery"
     folder: "content/gallery"

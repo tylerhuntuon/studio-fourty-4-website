@@ -3,6 +3,7 @@ publish_mode: editorial_workflow
 backend:
   name: git-gateway
   branch: main
+local_backend: true
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
@@ -45,8 +46,10 @@ collections:
     folder: "content/gallery"
     create: true
     delete: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
+    summary: "{{fields.title}}"
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Alt Text", name: "alt", widget: "string", required: false }
       - { label: "Order", name: "order", widget: "number", required: false, value_type: "int" }

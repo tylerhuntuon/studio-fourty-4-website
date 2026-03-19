@@ -23,6 +23,7 @@ collections:
           - label: "Hero Section"
             name: "heroSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Hero Heading", name: "heroHeading", widget: "markdown" }
               - { label: "Book Now Button", name: "bookNowButton", widget: "markdown" }
@@ -32,6 +33,7 @@ collections:
           - label: "Intro Section"
             name: "introSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Intro Heading", name: "introHeading", widget: "markdown" }
               - { label: "Intro Paragraph 1", name: "introParagraph1", widget: "markdown" }
@@ -41,6 +43,7 @@ collections:
           - label: "Meet The Team Section"
             name: "meetTeamSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Meet The Team Heading", name: "meetTeamHeading", widget: "markdown" }
               - { label: "Meet The Team Subheading", name: "meetTeamSubHeading", widget: "markdown" }
@@ -52,6 +55,7 @@ collections:
           - label: "Final Slogan Section"
             name: "sloganSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Final Slogan", name: "finalSlogan", widget: "markdown" }
               - { label: "Final Book Now Button", name: "finalBookNowButton", widget: "markdown" }
@@ -86,6 +90,139 @@ collections:
               - { label: "Erin @", name: "erinAt", widget: "text" }
               - { label: "Erin Body", name: "erinBody", widget: "markdown" }
               - { label: "Erin Image", name: "erinImage", widget: "image" }
+
+      - label: "Services"
+        name: "services"
+        file: "content/pages/services.yml"
+        fields:
+          - label: "Services Section"
+            name: "servicesSection"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Deluxe Pedicure"
+                name: "deluxePedi"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Heading", name: "heading", widget: "markdown" }
+                  - { label: "Subheading", name: "subheading", widget: "markdown" }
+                  - { label: "Body", name: "body", widget: "markdown" }
+                  - { label: "Image", name: "image", widget: "image" }
+              - label: "Express Dry Pedicure"
+                name: "expressDryPedi"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Heading", name: "heading", widget: "markdown" }
+                  - { label: "Subheading", name: "subheading", widget: "markdown" }
+                  - { label: "Body", name: "body", widget: "markdown" }
+                  - { label: "Image", name: "image", widget: "image" }
+              - label: "BIAB Gel Nail Extensions"
+                name: "biabGelNailExt"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Heading", name: "heading", widget: "markdown" }
+                  - { label: "Subheading", name: "subheading", widget: "markdown" }
+                  - { label: "Body", name: "body", widget: "markdown" }
+                  - { label: "Image", name: "image", widget: "image" }
+              - label: "BIAB Gel Overlay"
+                name: "biabGelOverlay"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Heading", name: "heading", widget: "markdown" }
+                  - { label: "Subheading", name: "subheading", widget: "markdown" }
+                  - { label: "Body", name: "body", widget: "markdown" }
+                  - { label: "Image", name: "image", widget: "image" }
+              - label: "Express Gel Polish Colour Only"
+                name: "expGelPolColOnl"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Heading", name: "heading", widget: "markdown" }
+                  - { label: "Subheading", name: "subheading", widget: "markdown" }
+                  - { label: "Body", name: "body", widget: "markdown" }
+                  - { label: "Image", name: "image", widget: "image" }
+              - label: "Nail Removal & Reapply"
+                name: "nailRemReap"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Heading", name: "heading", widget: "markdown" }
+                  - { label: "Subheading", name: "subheading", widget: "markdown" }
+                  - { label: "Body", name: "body", widget: "markdown" }
+                  - { label: "Image", name: "image", widget: "image" }
+              - label: "Nail Removal"
+                name: "nailRem"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Heading", name: "heading", widget: "markdown" }
+                  - { label: "Subheading", name: "subheading", widget: "markdown" }
+                  - { label: "Body", name: "body", widget: "markdown" }
+                  - { label: "Image", name: "image", widget: "image" }
+              - label: "Natural Nail Up-Keep"
+                name: "natNailUp"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Heading", name: "heading", widget: "markdown" }
+                  - { label: "Subheading", name: "subheading", widget: "markdown" }
+                  - { label: "Body", name: "body", widget: "markdown" }
+                  - { label: "Image", name: "image", widget: "image" }
+
+          - label: "Extras Section"
+            name: "extrasSection"
+            widget: "object"
+            collapsed: true
+            fields:
+            - label: "Nail Repair"
+              name: "nailRepair"
+              widget: "object"
+              collapsed: true
+              fields:
+                - { label: "Heading", name: "heading", widget: "markdown" }
+                - { label: "Subheading", name: "subheading", widget: "markdown" }
+                - { label: "Body", name: "body", widget: "markdown" }
+                - { label: "Image", name: "image", widget: "image" }
+            - label: "Basic Nail Art"
+              name: "basicNailArt"
+              widget: "object"
+              collapsed: true
+              fields:
+                - { label: "Heading", name: "heading", widget: "markdown" }
+                - { label: "Subheading", name: "subheading", widget: "markdown" }
+                - { label: "Body", name: "body", widget: "markdown" }
+                - { label: "Image", name: "image", widget: "image" }
+            - label: "French Tip"
+              name: "frenchTip"
+              widget: "object"
+              collapsed: true
+              fields:
+                - { label: "Heading", name: "heading", widget: "markdown" }
+                - { label: "Subheading", name: "subheading", widget: "markdown" }
+                - { label: "Body", name: "body", widget: "markdown" }
+                - { label: "Image", name: "image", widget: "image" }
+            - label: "Intermediate Nail Art"
+              name: "intermediateNailArt"
+              widget: "object"
+              collapsed: true
+              fields:
+                - { label: "Heading", name: "heading", widget: "markdown" }
+                - { label: "Subheading", name: "subheading", widget: "markdown" }
+                - { label: "Body", name: "body", widget: "markdown" }
+                - { label: "Image", name: "image", widget: "image" }
+            - label: "Advanced Nail Art"
+              name: "advancedNailArt"
+              widget: "object"
+              collapsed: true
+              fields:
+                - { label: "Heading", name: "heading", widget: "markdown" }
+                - { label: "Subheading", name: "subheading", widget: "markdown" }
+                - { label: "Body", name: "body", widget: "markdown" }
+                - { label: "Image", name: "image", widget: "image" }
 
   - name: "gallery"
     label: "About Gallery"

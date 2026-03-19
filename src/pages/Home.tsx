@@ -56,9 +56,9 @@ function Home(){
 
                 <div className="absolute inset-0 bg-gray-900/20" />
 
-                <div className="absolute inset-0 flex items-end justify-center md:py-20 md:px-30">
+                <div className="absolute inset-0 flex items-end justify-center px-3 py-10 md:py-20 md:px-30">
                     <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center w-full max-w-full md:max-w-300 text-calacatta">
-                        <div  className="text-4xl pt-2 font-heading pb-10 md:pb-0">
+                        <div  className="text-4xl text-creme pt-2 font-heading pb-10 md:pb-0">
                             <ReactMarkdown>
                                 {homeContent.heroSection.heroHeading}
                             </ReactMarkdown>
@@ -70,7 +70,7 @@ function Home(){
                             className="text-right"    
                         >
                             <button 
-                                className="pt-2 text-calacatta font-heading text-4xl text-right hover:rounded-xs hover:bg-merlot transition"
+                                className="pt-2 px-2 text-4xl text-right text-creme font-heading border-2 border-transparent rounded-none transition-all duration-300 hover:rounded-xs hover:border-calacatta"
                             >
                                 <ReactMarkdown>
                                     {homeContent.heroSection.bookNowButton}

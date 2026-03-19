@@ -1,81 +1,110 @@
+bgImage: /uploads/MARBLE.png
 servicesSection:
-  deluxePedi:
-    heading: Deluxe Pedicure
-    subheading: Deluxe Pedicure
-    body: "Indulge in a luxurious experience as you unwind with our Deluxe Pedicure. Begin with a soothing foot soak, followed by a refreshing exfoliation and deep moisturization. Our expert technicians will take special care of your cuticles before applying your gel polish. Treat your feet to the pampering they deserve and leave with perfect, polished toes!"
-    time: 1 hr
-    image: 
-  expressDryPedi:
-    heading: Express Dry Pedicure
-    subheading: Express Dry Pedicure
-    body: "Indulge in a quick and refreshing express pedicure where we perfect your cuticle treatment and gel polish. This service is designed for those on the go, ensuring you leave with fabulous feet in a timely manner. Please note that a soak is not included, making it perfect for a busy schedule."
-    time: 1 hr
-    image: 
+  nailRem:
+    heading: Nail Removal
+    subheading: Nail Removal
+    body: Picking or peeling can ruin your natural nail, we don't want that! Let the
+      professionals carefully remove them for you.
+    time: 50 mins
+    image: null
   biabGelNailExt:
     heading: BIAB Gel Nail Extensions
     subheading: BIAB Gel Nail Extensions
-    body: "Are you looking for some length? Our gel extensions are applied to the natural nail plate, hand shaped, then decorated with gel colours or designs of your choice!"
+    body: Are you looking for some length? Our gel extensions are applied to the
+      natural nail plate, hand shaped, then decorated with gel colours or
+      designs of your choice!
     time: 1 hr, 30 mins
-    image:
-  biabGelOverlay:
-    heading: BIAB Gel Overlay
-    subheading: BIAB Gel Overlay
-    body: "Do you want stronger nails? With Gel Overlay, BIAB is applied to your natural nail plate to provide strength. We then decorate these babies with gel polish or designs of your choice! This service includes a colour, detailed cuticle preparation, and cuticle/mani care on completion."
-    time: 1 hr, 30 mins
-    image:
-  expGelPolColOnl:
-    heading: Express Gel Polish Colour Only
-    subheading: Express Gel Polish Colour Only
-    body: "Need a quick colour? this service offers no cuticle care & colour only, just a quick gel polish for a little something lasting 1-2 weeks. Disclaimer: Service for bare nails only."
-    time: 1 hr
-    image:
+    image: null
   nailRemReap:
     heading: Nail Removal & Reapply
     subheading: Nail Removal & Reapply
-    body: "Let's keep those claws looking fresh! Need a rebalance? this service is calling you."
+    body: Let's keep those claws looking fresh! Need a rebalance? this service is
+      calling you.
     time: 2 hrs
-    image:
-  nailRem: 
-    heading: Nail Removal
-    subheading: Nail Removal
-    body: "Picking or peeling can ruin your natural nail, we don't want that! Let the professionals carefully remove them for you."
-    time: 50 mins
-    image:
+    image: null
+  expGelPolColOnl:
+    heading: Express Gel Polish Colour Only
+    subheading: Express Gel Polish Colour Only
+    body: "Need a quick colour? this service offers no cuticle care & colour only,
+      just a quick gel polish for a little something lasting 1-2 weeks.
+      Disclaimer: Service for bare nails only."
+    time: 1 hr
+    image: null
+  biabGelOverlay:
+    heading: BIAB Gel Overlay
+    subheading: BIAB Gel Overlay
+    body: Do you want stronger nails? With Gel Overlay, BIAB is applied to your
+      natural nail plate to provide strength. We then decorate these babies with
+      gel polish or designs of your choice! This service includes a colour,
+      detailed cuticle preparation, and cuticle/mani care on completion.
+    time: 1 hr, 30 mins
+    image: null
+  deluxePedi:
+    heading: Deluxe Pedicure
+    subheading: Deluxe Pedicure
+    body: Indulge in a luxurious experience as you unwind with our Deluxe Pedicure.
+      Begin with a soothing foot soak, followed by a refreshing exfoliation and
+      deep moisturization. Our expert technicians will take special care of your
+      cuticles before applying your gel polish. Treat your feet to the pampering
+      they deserve and leave with perfect, polished toes!
+    time: 1 hr
+    image: null
   natNailUp:
     heading: Natural Nail Up-Keep
     subheading: Natural Nail Up-Keep
-    body: "For the ladies that love their natural nails or need a break, we will treat cuticles & natural nails to make them strong again! Simple & quick process with tenderness and care."
+    body: For the ladies that love their natural nails or need a break, we will
+      treat cuticles & natural nails to make them strong again! Simple & quick
+      process with tenderness and care.
     time: 40 mins
-    image:
-    
+    image: null
+  expressDryPedi:
+    heading: Express Dry Pedicure
+    subheading: Express Dry Pedicure
+    body: Indulge in a quick and refreshing express pedicure where we perfect your
+      cuticle treatment and gel polish. This service is designed for those on
+      the go, ensuring you leave with fabulous feet in a timely manner. Please
+      note that a soak is not included, making it perfect for a busy schedule.
+    time: 1 hr
+    image: null
+  bgImage: /uploads/MARBLE.jpg
 extrasSection:
-  nailRepair: 
+  nailRepair:
     heading: Nail Repair
     subheading: Nail Repair
-    body: "Oopsie! Nothing worse than breaking a nail. Let's fix her up, so you can look and feel your best!"
+    body: Oopsie! Nothing worse than breaking a nail. Let's fix her up, so you can
+      look and feel your best!
     time: 15 mins
-    image:
+    image: null
   basicNailArt:
     heading: Basic Nail Art
     subheading: Basic Nail Art
-    body: "Includes: Basic abstract or geometric art, lines, 2-6 gems, letters, shapes, small flower, glitter polish on 1 nail each hand.​"
+    body: "Includes: Basic abstract or geometric art, lines, 2-6 gems, letters,
+      shapes, small flower, glitter polish on 1 nail each hand.​"
     time: 15 mins
-    image:
+    image: null
   frenchTip:
     heading: French Tip
     subheading: French Tip
-    body: "all French tips are painted my hand. This includes micro frenchies, deep set & classic. you ask, I paint xx"
+    body: all French tips are painted my hand. This includes micro frenchies, deep
+      set & classic. you ask, I paint xx
     time: 30 mins
-    image:
+    image: null
   intermediateNailArt:
     heading: Intermediate Nail Art
     subheading: Intermediate Nail Art
-    body: "Includes: Intermediate abstract or geometric art, chrome, aura art, letters, shapes or gems. Disclaimer: If you choose a design that takes over 1h to create, you will acquire the advanced nail art fee. Not sure? send your inspo through xx​"
+    body: "Includes: Intermediate abstract or geometric art, chrome, aura art,
+      letters, shapes or gems. Disclaimer: If you choose a design that takes
+      over 1h to create, you will acquire the advanced nail art fee. Not sure?
+      send your inspo through xx​"
     time: 40 mins
-    image:
+    image: null
   advancedNailArt:
     heading: Advanced Nail Art
     subheading: Advanced Nail Art
-    body: "Includes: patterned French tips, 3D art, advanced abstract or geometric art, Junk nails, large lettering or shapes, pictures, themed nail art. Timeframe and price varies based on design. Disclaimer: If you choose a design that takes over 1h to create, you will acquire the advanced nail art fee. Not sure? send your inspo through xx"
+    body: "Includes: patterned French tips, 3D art, advanced abstract or geometric
+      art, Junk nails, large lettering or shapes, pictures, themed nail art.
+      Timeframe and price varies based on design. Disclaimer: If you choose a
+      design that takes over 1h to create, you will acquire the advanced nail
+      art fee. Not sure? send your inspo through xx"
     time: 1 hr, 30 mins
-    image:
+    image: null

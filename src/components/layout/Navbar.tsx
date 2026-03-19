@@ -7,6 +7,7 @@ function Navbar(){
     const isDarkPage = location.pathname !== "/";
     const useDarkMenuText = location.pathname === "/about";
     const isSocialsPage = location.pathname === "/socials";
+    const isServicesPage = location.pathname === "/services";
     const closeMenu = () => setMenuOpen(false);
 
     return (
@@ -46,6 +47,8 @@ function Navbar(){
                             isDarkPage ? "text-calacatta" : "text-onyx bg-onyx/0"
                         } ${
                             isSocialsPage ? "bg-linear-to-b from-onyx via-onyx to-onyx/80" : ""
+                        } ${
+                            isServicesPage ? "bg-onyx/80 rounded-l-xl" : ""
                         } z-50`}
                     >
                         <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Home</NavLink>

@@ -6,7 +6,7 @@ function Footer(){
     return (
         <div className={`relative z-30 w-full flex justify-between items-center px-6 py-4 ${overlapsPage ? "-mt-30 md:-mt-23 text-calacatta" : "bg-taupe text-onyx"}`}>
             <NavLink to="/">
-                <img src={overlapsPage ? "src/assets/logo/SECONDARY LOGO - CALACATTA.svg" : "src/assets/logo/SECONDARY LOGO - ONYX.svg"} className="w-30" />
+                <img src={overlapsPage ? "src/assets/logo/SECONDARY LOGO - CALACATTA.svg" : "src/assets/logo/SECONDARY LOGO - ONYX.svg"} className="block w-30" />
             </NavLink>
             
 

@@ -6,7 +6,7 @@ import AppRouter from "./router";
 function App(){
   return(
     <BrowserRouter>
-      <div className = "min-h-screen flex flex-col">
+      <div className = "min-h-[100svh] flex flex-col">
         <Navbar />
         <main className = "flex-1">
           <AppRouter />

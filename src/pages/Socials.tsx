@@ -22,6 +22,7 @@ function Socials(){
     return (
         <div className="bg-onyx pt-7 md:pt-0">
             {/*first section (Faith)*/}
+
             <div className="relative z-20 grid grid-cols-1 md:grid-cols-5 w-full md:h-[60vh] overflow-hidden">
                 <div className="flex h-full bg-onyx text-calacatta md:col-span-2">
                     <div className="flex h-full w-full flex-col justify-center px-12 py-8 md:border-r-2 border-b-2 border-merlot">

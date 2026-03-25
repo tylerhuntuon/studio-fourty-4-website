@@ -36,7 +36,7 @@ function Socials(){
                             {socialsContent.faithSection.faithAt}
                         </p>
                         
-                        <div className="font-body text-sm italic leading-6 pl-1/2 text-right">
+                        <div className="font-body text-sm ml-auto max-w-150 italic leading-6 pl-1/2 text-right">
                             <ReactMarkdown>
                                 {socialsContent.faithSection.faithBody}
                             </ReactMarkdown>
@@ -79,7 +79,7 @@ function Socials(){
                             {socialsContent.erinSection.erinAt}
                         </p>
                         
-                        <div className="font-body text-sm italic leading-6">
+                        <div className="font-body text-sm italic leading-6 max-w-150">
                             <ReactMarkdown>
                                 {socialsContent.erinSection.erinBody}
                             </ReactMarkdown>

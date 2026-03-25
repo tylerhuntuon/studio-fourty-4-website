@@ -14,7 +14,8 @@ function Home(){
             heroImageRight: string;
         };
         introSection: {
-            introHeading: string;
+            introHeading1: string;
+            introHeading2: string;
             introParagraph1: string;
             introParagraph2: string;
             aboutButton: string;
@@ -86,19 +87,30 @@ function Home(){
             {/*second section (Words and about button)*/}
             <div className="flex relative w-full bg-taupe text-calacatta justify-center items-center">
                 <div className="flex flex-col relative px-5 md:w-200 justify-center items-center gap-4 text-center text-sm/8 pt-15 pb-10">
-                    <div className="text-5xl font-heading pb-5">
+                    <div className="text-5xl font-heading">
                         <ReactMarkdown>
-                            {homeContent.introSection.introHeading}
+                            {homeContent.introSection.introHeading1}
                         </ReactMarkdown>
                     </div>
                     
-                    <div className="font-caviar text-body italic">
+                    <div className="font-caviar font-body text-justify italic border-b-2 pb-3 border-creme">
                         <ReactMarkdown>
                             {homeContent.introSection.introParagraph1}
                         </ReactMarkdown>
                     </div>
-                    
 
+                    <div className="text-5xl font-heading pt-2">
+                        <ReactMarkdown>
+                            {homeContent.introSection.introHeading2}
+                        </ReactMarkdown>
+                    </div>
+
+                    <div className="font-caviar font-body text-justify italic">
+                        <ReactMarkdown>
+                            {homeContent.introSection.introParagraph2}
+                        </ReactMarkdown>
+                    </div>
+                    
                     <Link
                         to="/about"
                         className="border-2 font-feature rounded-xs border-calacatta text-calacatta hover:bg-calacatta hover:text-merlot transition w-40 self-center text-center font-bold"
@@ -112,7 +124,7 @@ function Home(){
 
             {/*third section (picture and meet the team)*/}
             <div className="w-full bg-creme text-onyx md:px-16 px-5 py-16 text-sm/8">
-                <div className="grid md:grid-cols-3 gap-10 items-center justify-center">
+                <div className="mx-auto grid max-w-300 md:grid-cols-3 gap-10 items-center justify-center">
                     <div className="">
                         <img src={homeContent.meetTeamSection.meetTheTeamImage} />
                     </div>

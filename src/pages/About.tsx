@@ -45,12 +45,12 @@ function About(){
                 <div className="relative grid grid-cols-1 md:grid-cols-2 w-full md:h-[60vh] translate-y-7 z-20">
                     <div className="flex h-full bg-calacatta text-onyx border-b-2 border-taupe">
                         <div className="flex h-full w-full flex-col justify-center px-12 py-8 items-center">
-                            <div className="text-5xl font-heading pb-10">
+                            <div className="ml-auto max-w-150 text-5xl text-right font-heading pb-10">
                                 <ReactMarkdown>
                                     {aboutContent.heroHeading}
                                 </ReactMarkdown>
                             </div>
-                            <div className="font-body text-sm italic leading-6 text-right">
+                            <div className="md:ml-auto font-body text-sm italic leading-6 md:text-right max-w-150 text-justify">
                                 <ReactMarkdown>
                                     {aboutContent.heroText}
                                 </ReactMarkdown>

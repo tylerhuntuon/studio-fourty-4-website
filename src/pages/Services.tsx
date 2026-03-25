@@ -119,13 +119,13 @@ function Services(){
 
             <div className="relative z-10 mt-15 px-6 md:px-12 xl:px-50 pb-12 max-w-400 mx-auto">
                 <div className="columns-1 md:columns-2 xl:columns-3 gap-5 space-y-5 text-onyx ">
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.deluxePedi.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.deluxePedi.subheading}
                             </ReactMarkdown>
@@ -159,13 +159,13 @@ function Services(){
                         
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.expressDryPedi.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.expressDryPedi.subheading}
                             </ReactMarkdown>
@@ -198,13 +198,13 @@ function Services(){
                         </div>
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.biabGelNailExt.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.biabGelNailExt.subheading}
                             </ReactMarkdown>
@@ -237,13 +237,13 @@ function Services(){
                         </div>
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.biabGelOverlay.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.biabGelOverlay.subheading}
                             </ReactMarkdown>
@@ -276,13 +276,13 @@ function Services(){
                         </div>
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.expGelPolColOnl.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.expGelPolColOnl.subheading}
                             </ReactMarkdown>
@@ -315,13 +315,13 @@ function Services(){
                         </div>
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.nailRemReap.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.nailRemReap.subheading}
                             </ReactMarkdown>
@@ -354,13 +354,13 @@ function Services(){
                         </div>
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.nailRem.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.nailRem.subheading}
                             </ReactMarkdown>
@@ -393,13 +393,13 @@ function Services(){
                         </div>
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.natNailUp.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.servicesSection.natNailUp.subheading}
                             </ReactMarkdown>
@@ -436,13 +436,13 @@ function Services(){
 
                 <h1 className="text-center text-7xl font-heading text-creme py-5">Extras</h1>
                 <div className="columns-1 md:columns-2 xl:columns-3 gap-5 space-y-5 text-onyx ">
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.extrasSection.nailRepair.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.extrasSection.nailRepair.subheading}
                             </ReactMarkdown>
@@ -475,13 +475,13 @@ function Services(){
                         </div>
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.extrasSection.basicNailArt.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.extrasSection.basicNailArt.subheading}
                             </ReactMarkdown>
@@ -514,13 +514,13 @@ function Services(){
                         </div>
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.extrasSection.frenchTip.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.extrasSection.frenchTip.subheading}
                             </ReactMarkdown>
@@ -553,13 +553,13 @@ function Services(){
                         </div>
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.extrasSection.intermediateNailArt.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.extrasSection.intermediateNailArt.subheading}
                             </ReactMarkdown>
@@ -592,13 +592,13 @@ function Services(){
                         </div>
                     </div>
 
-                    <div className="break-inside-avoid bg-creme/60 p-5 text-center">
+                    <div className="break-inside-avoid bg-creme/60 p-5 text-left">
                         <div className="font-heading text-2xl">
                             <ReactMarkdown>
                                 {servicesContent.extrasSection.advancedNailArt.heading}
                             </ReactMarkdown>
                         </div>
-                        <div className="font-subheading text-lg">
+                        <div className="font-subheading text-lg border-b-2 border-taupe">
                             <ReactMarkdown>
                                 {servicesContent.extrasSection.advancedNailArt.subheading}
                             </ReactMarkdown>

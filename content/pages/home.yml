@@ -1,51 +1,41 @@
 heroSection:
-  heroHeading: Words words words words **words**
+  heroHeading: Expression. **Elevation.** Experience.
   bookNowButton: Book Now
   heroImageLeft: /uploads/homeHeroLeft.jpg
   heroImageRight: /uploads/homeHeroRight.jpg
 introSection:
-  introHeading: Heading Or Something
-  introParagraph1: >-
-    Im writing some words to fill in this space so I can see what it looks like
-    when it's full. words words and some more words, gotta fill this space with
-    something so I can get the padding right blah blah blah 
-
-    Im writing some words to fill in this space so I can see what it looks like when it's full. words words and some more words, gotta fill this space with something so I can get the padding right blah blah blah
-
-
-
-    Im writing some words to fill in this space so I can see what it looks like when it's full. words words and some more words, gotta fill this space with something so I can get the padding right blah blah blah
-  introParagraph2: Im writing some words to fill in this space so I can see what
-    it looks like when it's full. words words and some more words, gotta fill
-    this space with something so I can get the padding right Im writing some
-    words to fill in this space so I can see what it looks like when it's full.
-    words words and some more words, gotta fill this space with something so I
-    can get the padding right Im writing some words to fill in this space so I
-    can see what it looks like when it's full. words words and some more words,
-    gotta fill this space with something so I can get the padding right Im
-    writing some words to fill in this space so I can see what it looks like
-    when it's full. words words and some more words, gotta fill this space with
-    something so I can get the padding right Im writing some words to fill in
-    this space so I can see what it looks like when it's full.
+  introHeading1: Introducing StudioForty4
+  introParagraph1: StudioForty4 is a luxury nail atelier built on precision,
+    intention, and elevated experience. We believe beauty is a form of
+    self-expression and that self-expression is powerful. Every appointment is
+    designed to feel considered and unrushed, where advanced technique meets
+    refined detail. This is more than a nail service, this is *YOUR* hour.
+  introHeading2: Our Philosophy
+  introParagraph2: StudioForty4 is built on intention, mastery.  and empowerment.
+    We believe beauty is a form of self-expression, and that self-expression is
+    fundamental. Our values centre around precision, elevated experience, and
+    creating space for women to feel confident and seen.Beyond our services, we
+    are committed to becoming a recognised hub for independent female creatives
+    within the nail industry, cultivating a collective who share the same
+    vision for excellence and growth. StudioForty4 exists not only to deliver
+    exceptional nail artistry, but to raise the standard, support creative
+    ambition, and build a respected community within the industry.
   aboutButton: About
 meetTeamSection:
-  meetTeamHeading: Heading
-  meetTeamSubHeading: Meet the team or something
-  meetTeamParagraph: Im writing some words to fill in this space so I can see what
-    it looks like when it's full. words words and some more words, gotta fill
-    this space with something so I can get the padding right Im writing some
-    words to fill in this space so I can see what it looks like when it's full.
-    words words and some more words, gotta fill this space with something so I
-    can get the padding right Im writing some words to fill in this space so I
-    can see what it looks like when it's full. words words and some more words,
-    gotta fill this space with something so I can get the padding right Im
-    writing some words to fill in this space so I can see what it looks like
-    when it's full. words words and some more words, gotta fill this space with
-    something so I can get the padding right Im writing some words to fill in
-    this space so I can see what it looks like when it's full.
+  meetTeamHeading: Meet The Team
+  meetTeamSubHeading: Meet the team
+  meetTeamParagraph: >-
+    With years of combined knowledge, Faith and Erin share a deep passion for
+    nails as both an artform and an experience. Every detail from technique to
+    atmosphere is intentionally curated to ensure each client feels elevated,
+    cared for, and confident. 
+
+    We believe your appointment should be more than just a service. It's a moment of self-expression, transformation, and indulgence.
+
+    To maintain this standard, we thoughtfully hand-select every artist and business within our space. Each one aligns with our values of quality, creativity, and client experience - ensuring a cohesive, high-end environment you can trust.
   socialsButton: Socials
   meetTheTeamImage: /uploads/homeMeetTeam.jpg
 sloganSection:
-  finalSlogan: Something. Someone. Somewhere.
+  finalSlogan: Expression. Elevation. Experience.
   finalBookNowButton: Book Now
   finalGif: /uploads/bottomBannnerGif.gif

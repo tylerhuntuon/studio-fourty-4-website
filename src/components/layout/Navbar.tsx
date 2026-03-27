@@ -4,10 +4,11 @@ import { useState } from "react";
 function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
-    const isDarkPage = location.pathname !== "/";
+    const isDarkPage = !["/", "/policy"].includes(location.pathname);
     const useDarkMenuText = location.pathname === "/about";
     const isSocialsPage = location.pathname === "/socials";
     const isServicesPage = location.pathname === "/services";
+    const isPolicyPage = location.pathname === "/policy";
     const closeMenu = () => setMenuOpen(false);
 
     return (
@@ -49,6 +50,8 @@ function Navbar(){
                             isSocialsPage ? "bg-linear-to-b from-onyx via-onyx to-onyx/80" : ""
                         } ${
                             isServicesPage ? "bg-onyx/80 rounded-l-xl" : ""
+                        } ${
+                            isPolicyPage ? "text-calacatta bg-linear-to-b from-taupe to-taupe/75" : ""
                         } z-50`}
                     >
                         <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Home</NavLink>

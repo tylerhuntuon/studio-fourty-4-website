@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Socials from "./pages/Socials";
+import Policy from "./pages/Policy";
 import NotFound from "./pages/NotFound";
 
 function AppRouter(){
@@ -12,6 +13,7 @@ function AppRouter(){
             <Route path ="/about" element = {<About />} />
             <Route path ="/services" element = {<Services />} />
             <Route path ="/socials" element = {<Socials />} />
+            <Route path ="/policy" element = {<Policy />} />
             <Route path ="/*" element = {<NotFound />} />
         </Routes>
     );

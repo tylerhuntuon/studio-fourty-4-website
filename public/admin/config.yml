@@ -9,7 +9,7 @@ media_folder: "public/uploads"
 public_folder: "/uploads"
 
 logo:
-  src: "src/assets/logo/MONOGRAM - ONYX.svg"
+  src: "/PRIMARY LOGO - BLACK.png"
   show_in_header: true
 
 collections:
@@ -37,8 +37,6 @@ collections:
             fields:
               - { label: "Intro Heading 1", name: "introHeading1", widget: "markdown" }
               - { label: "Intro Paragraph 1", name: "introParagraph1", widget: "markdown" }
-              - { label: "Intro Heading 2", name: "introHeading2", widget: "markdown" }
-              - { label: "Intro Paragraph 2", name: "introParagraph2", widget: "markdown" }
               - { label: "About Button", name: "aboutButton", widget: "markdown" }
 
           - label: "Meet The Team Section"
@@ -80,7 +78,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Faith Heading", name: "faithHeading", widget: "markdown" }
-              - { label: "Faith @", name: "faithAt", widget: "text" }
+              - { label: "Faith @", name: "faithAt", widget: "text", required: false  }
               - { label: "Faith Body", name: "faithBody", widget: "markdown" }
               - { label: "Faith Image", name: "faithImage", widget: "image" }
 
@@ -90,7 +88,7 @@ collections:
             collapsed: true
             fields:
               - { label: "Erin Heading", name: "erinHeading", widget: "markdown" }
-              - { label: "Erin @", name: "erinAt", widget: "text" }
+              - { label: "Erin @", name: "erinAt", widget: "text", required: false  }
               - { label: "Erin Body", name: "erinBody", widget: "markdown" }
               - { label: "Erin Image", name: "erinImage", widget: "image" }
 
@@ -240,3 +238,14 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Alt Text", name: "alt", widget: "string", required: false }
       - { label: "Order", name: "order", widget: "number", required: false, value_type: "int" }
+  
+  - name: "policy"
+    label: "Policies"
+    folder: "content/policy"
+    create: true
+    delete: true
+    slug: "{{fields.heading}}"
+    summary: "{{fields.heading}}"
+    fields:
+      - { label: "Heading", name: "heading", widget: "text" }
+      - { label: "Body", name: "bodyContent", widget: "markdown" }

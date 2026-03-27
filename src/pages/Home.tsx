@@ -15,9 +15,7 @@ function Home(){
         };
         introSection: {
             introHeading1: string;
-            introHeading2: string;
             introParagraph1: string;
-            introParagraph2: string;
             aboutButton: string;
         };
         meetTeamSection: {
@@ -86,20 +84,20 @@ function Home(){
 
             {/*second section (Words and about button)*/}
             <div className="flex relative w-full bg-taupe text-calacatta justify-center items-center">
-                <div className="flex flex-col relative px-5 md:w-200 justify-center items-center gap-4 text-center text-sm/8 pt-15 pb-10">
+                <div className="flex flex-col relative px-5 md:w-150 justify-center items-center gap-4 text-center text-sm/8 pt-15 pb-10">
                     <div className="text-5xl font-heading">
                         <ReactMarkdown>
                             {homeContent.introSection.introHeading1}
                         </ReactMarkdown>
                     </div>
                     
-                    <div className="font-caviar font-body text-justify italic border-b-2 pb-3 border-creme">
+                    <div className="font-caviar font-body text-justify italic pb-3">
                         <ReactMarkdown>
                             {homeContent.introSection.introParagraph1}
                         </ReactMarkdown>
                     </div>
 
-                    <div className="text-5xl font-heading pt-2">
+                    {/* <div className="text-5xl font-heading pt-2">
                         <ReactMarkdown>
                             {homeContent.introSection.introHeading2}
                         </ReactMarkdown>
@@ -109,7 +107,7 @@ function Home(){
                         <ReactMarkdown>
                             {homeContent.introSection.introParagraph2}
                         </ReactMarkdown>
-                    </div>
+                    </div> */}
                     
                     <Link
                         to="/about"
@@ -135,7 +133,7 @@ function Home(){
                                 {homeContent.meetTeamSection.meetTeamHeading}
                             </ReactMarkdown>
                         </div>
-                        <div className="text-xl font-bold pb-10 pt-2 font-subheading">
+                        <div className="text-xl font-bold pb-3 pt-2 font-subheading">
                             <ReactMarkdown>
                                 {homeContent.meetTeamSection.meetTeamSubHeading}
                             </ReactMarkdown>

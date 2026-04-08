@@ -1,5 +1,9 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import secondaryLogoCalacatta from "../../assets/logo/SECONDARY LOGO - CALACATTA.svg";
+import secondaryLogoOnyx from "../../assets/logo/SECONDARY LOGO - ONYX.svg";
+import monogramCalacatta from "../../assets/logo/MONOGRAM - CALACATTA.svg";
+import monogramOnyx from "../../assets/logo/MONOGRAM - ONYX.svg";
 
 const CONTACT_EMAIL = "studioforty4official@gmail.com";
 const INSTAGRAM_URL = "https://www.instagram.com/studioforty4official/";
@@ -39,11 +43,11 @@ function Footer(){
         <div className={`relative z-30 w-full flex justify-between items-center px-6 py-4 ${overlapsPage ? "-mt-30 md:-mt-23 text-calacatta" : "bg-taupe text-onyx"}`}>
             <NavLink to="/">
                 <img 
-                    src={overlapsPage ? "src/assets/logo/SECONDARY LOGO - CALACATTA.svg" : "src/assets/logo/SECONDARY LOGO - ONYX.svg"} 
+                    src={overlapsPage ? secondaryLogoCalacatta : secondaryLogoOnyx} 
                     className="hidden md:block w-30" 
                 />
                 <img 
-                    src={overlapsPage ? "src/assets/logo/MONOGRAM - CALACATTA.svg" : "src/assets/logo/MONOGRAM - ONYX.svg"} 
+                    src={overlapsPage ? monogramCalacatta : monogramOnyx} 
                     className="block md:hidden w-5" 
                 />
             </NavLink>

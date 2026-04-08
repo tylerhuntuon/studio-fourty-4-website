@@ -1,5 +1,7 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
+import primaryLogoCalacatta from "../../assets/logo/PRIMARY LOGO - CALACATTA.svg";
+import primaryLogoOnyx from "../../assets/logo/PRIMARY LOGO - ONYX.svg";
 
 function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +17,7 @@ function Navbar(){
         <div className={`absolute top-0 left-0 z-50 w-full px-6 py-4 ${isDarkPage ? "text-calacatta" : "text-onyx"}`}>
             <div className="flex items-center justify-between">
                 <NavLink to="/" onClick={closeMenu}>
-                    <img src={isDarkPage ? "src/assets/logo/PRIMARY LOGO - CALACATTA.svg" : "src/assets/logo/PRIMARY LOGO - ONYX.svg"} className="w-60" />
+                    <img src={isDarkPage ? primaryLogoCalacatta : primaryLogoOnyx} className="w-60" />
                 </NavLink>
                 
 

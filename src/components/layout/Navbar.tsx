@@ -8,7 +8,7 @@ function Navbar(){
     const location = useLocation();
     const isDarkPage = !["/", "/policy"].includes(location.pathname);
     const useDarkMenuText = location.pathname === "/about";
-    const isSocialsPage = location.pathname === "/socials";
+    const isSocialsPage = location.pathname === "/team";
     const isServicesPage = location.pathname === "/services";
     const isPolicyPage = location.pathname === "/policy";
     const closeMenu = () => setMenuOpen(false);
@@ -25,7 +25,8 @@ function Navbar(){
                     <NavLink to="/" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Home</NavLink>
                     <NavLink to="/about" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>About</NavLink>
                     <NavLink to="/services" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Services</NavLink>
-                    <NavLink to="/socials" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Socials</NavLink>
+                    <NavLink to="/team" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>The Team</NavLink>
+                    <NavLink to="https://www.instagram.com/studioforty4official/" target="_blank" rel="noopener noreferrer" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Socials</NavLink>
                     <NavLink to="https://www.fresha.com/a/studioforty4-erina-206-the-entrance-road-fe15fhse/all-offer?menu=true&share=true&pId=1032092&utm_content=link_in_bio&utm_medium=social&utm_source=ig" className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Book Now</NavLink>
                 </div>
 
@@ -59,7 +60,8 @@ function Navbar(){
                         <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Home</NavLink>
                         <NavLink to="/about" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>About</NavLink>
                         <NavLink to="/services" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Services</NavLink>
-                        <NavLink to="/socials" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Socials</NavLink>
+                        <NavLink to="/team" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>The Team</NavLink>
+                        <NavLink to="https://www.instagram.com/studioforty4official/" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className={({ isActive }) => isActive ? "underline underline-offset-4" : "hover:underline underline-offset-4"}>Socials</NavLink>
                         <NavLink to="https://www.fresha.com/a/studioforty4-erina-206-the-entrance-road-fe15fhse/all-offer?menu=true&share=true&pId=1032092&utm_content=link_in_bio&utm_medium=social&utm_source=ig" onClick={closeMenu} className={({ isActive }) => isActive ? "hidden" : "hover:underline underline-offset-4"}>Book Now</NavLink>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ function AppRouter(){
             <Route path ="/" element = {<Home />} />
             <Route path ="/about" element = {<About />} />
             <Route path ="/services" element = {<Services />} />
-            <Route path ="/socials" element = {<Socials />} />
+            <Route path ="/team" element = {<Socials />} />
             <Route path ="/policy" element = {<Policy />} />
             <Route path ="/*" element = {<NotFound />} />
         </Routes>

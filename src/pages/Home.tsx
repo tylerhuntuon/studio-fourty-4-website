@@ -144,8 +144,8 @@ function Home(){
                             </ReactMarkdown>
                         </div>
                         
-                        <div className="border-2 rounded-xs font-feature text-base border-merlot bg-merlot text-creme hover:bg-creme hover:text-merlot transition w-30 self-center text-center py-1.5 mt-5 font-bold">
-                            <Link to="/socials">
+                        <div className="border-2 rounded-xs font-feature text-base border-merlot bg-merlot text-creme hover:bg-creme hover:text-merlot transition w-40 self-center text-center py-1.5 mt-5 font-bold">
+                            <Link to="/team">
                                 <ReactMarkdown>
                                     {homeContent.meetTeamSection.socialsButton}
                                 </ReactMarkdown>
